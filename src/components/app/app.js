@@ -85,7 +85,7 @@ export default class App extends Component {
     return (
       <div className="app-wrapper">
         <AppHeader todos={this.state.toDoData}/>
-        <SearchPanel setSearchBarValue={this.setSearchBarValue} setFilterType={this.setFilterType}/>
+        <SearchPanel setSearchBarValue={this.setSearchBarValue} setFilterType={this.setFilterType} filterType={this.state.currentFilter}/>
         <ToDoList searchBarValue={this.state.searchBarValue} currentFilter={this.state.currentFilter} todos={this.state.toDoData} onDeleted={this.deleteItem} onToggleDone={this.onToggleDone} onToggleImportant={this.onToggleImportant}/> {/* Передаем onDeleted props, который содержит в себе функцию */}
         <AddListItem onAdded={this.addItem}/>
       </div>

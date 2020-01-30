@@ -25,7 +25,7 @@ export default class ToDoList extends Component {
     const {todos, onDeleted, onToggleDone, onToggleImportant, currentFilter, searchBarValue} = this.props;
     let filteredArray = this.filterItems(todos, currentFilter);
     if (searchBarValue.length !== 0) {
-      filteredArray = filteredArray.filter((item) => item.label.includes(searchBarValue));
+      filteredArray = filteredArray.filter((item) => item.label.toLowerCase().includes(searchBarValue.toLowerCase()));
     }
     const elements = filteredArray.map((item) => {
       const {id, label, ...todos} = item;

@@ -10,13 +10,13 @@ export default class SearchPanel extends Component {
   }
 
   render() {
-    const {setFilterType} = this.props;
+    const {setFilterType, filterType} = this.props;
 
     const searchPanelPlaceHolder = `Hey b0ss type smth here`;
     return (
       <div className="search-panel-wrapper">
         <input className="search-panel-bar" placeholder={searchPanelPlaceHolder} onChange={this.onSearchBarChange}/>
-        <ListFilter setFilterType={setFilterType}/>
+        <ListFilter filterType={filterType} setFilterType={setFilterType}/>
       </div>
     );
   }
