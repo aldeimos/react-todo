@@ -1,0 +1,21 @@
+.add-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-item-input {
+  flex-grow: 1;
+  margin-right: 15px;
+  padding: 0 0.75rem;
+
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.add-item-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  background: none;
+}

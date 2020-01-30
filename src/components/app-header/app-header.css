@@ -1,0 +1,15 @@
+.app-header {
+  margin-bottom: 10px;
+  
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 30px;
+}
+
+.app-header h2 {
+  font-size: 25px;
+
+  color: grey;
+}

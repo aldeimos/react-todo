@@ -1,0 +1,14 @@
+.search-panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search-panel-bar {
+  flex-grow: 1;
+  margin-right: 5px;
+  padding: 0 0.75rem;
+
+  border: 1px solid grey;
+  border-radius: 2px;
+}
